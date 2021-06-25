@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="height=device-height, 
+               width=device-width, initial-scale=1.0, 
+               minimum-scale=1.0, maximum-scale=1.0, 
+               user-scalable=no"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="./icons/favicon.ico" />
+    <title>Cristian Stoica</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="./images/logo.png" alt="logo" class="logo" />
+
+        <div id="hamburger-menu">
+          <div class="top-line line"></div>
+          <div class="middle-line line"></div>
+          <div class="bottom-line line"></div>
+        </div>
+        <ul class="links">
+          <li class="link"><a href="#about">About</a></li>
+          <li class="link"><a href="#projects">Projects</a></li>
+          <li class="link"><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!--  ====== HOME SECTION ====== -->
+      <section id="home">
+        <div class="section-content">
+          <div class="profile-img-container"></div>
+          <div class="intro-text">
+            <p>Hi! I'm</p>
+            <h3 class="highlight">Cristian Stoica</h3>
+            <p>
+              A <span class="highlight">web developer</span> who likes to tackle
+              both front-end and back-end problems.
+            </p>
+            <div class="platforms">
+              <a
+                href="https://github.com/crististoica"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img src="./icons/github.svg" alt="github" />
+              </a>
+              <a href="#">
+                <img src="./icons/linkedin.svg" alt="linkedin" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== ABOUT SECTION ===== -->
+      <section id="about">
+        <div class="section-content col">
+          <div class="entry">
+            <h2 class="entry-title">About</h2>
+            <p>
+              I am a very passionate person when it comes to web development and
+              programming in general. Despite having a
+              <span class="highlight">bachelor's degree</span> in
+              <span class="highlight">Computer Science</span>, I kept
+              <span class="highlight">learning and trying</span> new things on
+              my own. I like to build
+              <span class="highlight">interactive web applications</span> and
+              <span class="highlight">APIs</span>, but I can also build
+              <span class="highlight">static websites</span> (though I am not a
+              designer).
+            </p>
+          </div>
+          <div class="entry">
+            <h2 class="entry-title">Skills</h2>
+            <div class="skills">
+              <div class="skill">
+                <img
+                  src="./images/html.svg"
+                  alt="html logo"
+                  loading="lazy"
+                  width="30"
+                  height="30"
+                />
+                <p>HTML</p>
+              </div>
+              <div class="skill">
+                <img
+                  src="./images/css.svg"
+                  alt="css logo"
+                  loading="lazy"
+                  width="30"
+                  height="30"
+                />
+                <p>CSS</p>
+              </div>
+              <div class="skill">
+                <img
+                  src="./images/js.svg"
+                  alt="js logo"
+                  loading="lazy"
+                  width="30"
+                  height="30"
+                />
+                <p>JavaScript</p>
+              </div>
+              <div class="skill">
+                <img
+                  src="./images/react.svg"
+                  alt="react logo"
+                  loading="lazy"
+                  width="30"
+                  height="30"
+                />
+                <p>ReactJS</p>
+              </div>
+              <div class="skill">
+                <img
+                  src="./images/nodesvg.svg"
+                  alt="node logo"
+                  loading="lazy"
+                  width="30"
+                  height="30"
+                />
+                <p>NodeJS</p>
+              </div>
+              <div class="skill">
+                <img
+                  src="./images/mongo.svg"
+                  alt="mongo logo"
+                  loading="lazy"
+                  width="30"
+                  height="30"
+                />
+                <p>MongoDB</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== PROJECTS SECTION ===== -->
+      <section id="projects">
+        <div class="section-content f-start">
+          <h2 class="entry-title">Projects</h2>
+          <div class="project-cards">
+            <div class="card">
+              <div class="card-img-container">
+                <img
+                  src="./images/cards/covid19-view-desktop.PNG"
+                  alt="project screenshot"
+                />
+                <div class="project-nav">
+                  <a
+                    href="https://covid19-viewer.vercel.app/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    class="btn"
+                    >Live</a
+                  >
+                  <a
+                    href="#"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    class="btn"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="card-point pl-s">Covid19 Data Viewer</h2>
+                <p class="card-description">
+                  An app I made to keep track of covid19 cases.
+                </p>
+                <div class="card-tech">
+                  <p class="card-point pl-s">Made with:</p>
+                  <ul class="card-list">
+                    <li>ReactJS</li>
+                    <li>Redux</li>
+                    <li>MATERIAL - UI</li>
+                  </ul>
+                </div>
+                <div class="card-main-features">
+                  <p class="card-point pl-s">Main features:</p>
+                  <ul class="card-list">
+                    <li>
+                      Shows data about covid19 cases for most countries and
+                      global on a chosen date since the pandemic start.
+                    </li>
+                    <li>
+                      View covid19 cases on a chosen time range in a line chart.
+                    </li>
+                    <li>
+                      First 10 countries based on the number of cases for each
+                      category: confirmed, recovered, deceased.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-img-container">
+                <img
+                  src="./images/cards/quiz-desktop.PNG"
+                  alt="project screenshot"
+                />
+                <div class="project-nav">
+                  <a
+                    href="https://quiz-client-remaster.vercel.app"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    class="btn"
+                    >Live</a
+                  >
+                  <a
+                    href="#"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    class="btn"
+                    >Code</a
+                  >
+                </div>
+                <p class="highlight sm-text">
+                  The backend API is on a free shared hosting. If not used for
+                  some time, it turns off. So, the first time it boots up it
+                  will take 15 - 20 seconds. After that, it should work fine.
+                </p>
+              </div>
+              <div class="card-content">
+                <h2 class="card-point pl-s">Quiz App for CS Students</h2>
+                <p class="card-description">
+                  An app I made to help me and my coleagues prepare for the
+                  final year exam. The exam was required in order to be able to
+                  present the final project.
+                </p>
+                <div class="card-tech">
+                  <p class="card-point pl-s">Made with:</p>
+                  <ul class="card-list">
+                    <li>ReactJS</li>
+                    <li>Redux</li>
+                    <li>MATERIAL - UI</li>
+                    <li>NodeJS</li>
+                    <li>Express</li>
+                    <li>MongoDB</li>
+                  </ul>
+                </div>
+                <div class="card-main-features">
+                  <p class="card-point pl-s">Main features:</p>
+                  <ul class="card-list">
+                    <li>
+                      Quizes with random questions for the three required
+                      subjects: Java, Databases, Networks.
+                    </li>
+                    <li>
+                      Community: after taking a quiz, an option to create a post
+                      will appear next to each question; so, students that were
+                      less prepared for that subject, could ask for help.
+                    </li>
+                    <li>
+                      An admin panel used by admins to do CRUD (create, read,
+                      update, delete) operations on quizes and community.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-img-container">
+                <img
+                  src="./images/cards/easybank-desktop.PNG"
+                  alt="project screenshot"
+                />
+                <div class="project-nav">
+                  <a
+                    href="https://crististoica.github.io/easybank-frontendmentor/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    class="btn"
+                    >Live</a
+                  >
+                  <a
+                    href="https://github.com/crististoica/easybank-frontendmentor"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    class="btn"
+                    >Code</a
+                  >
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="card-point pl-s">Simple landing page</h2>
+                <p class="card-description">
+                  A challenge from
+                  <a
+                    href="https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    class="highlight"
+                    >frontendmentor.io</a
+                  >
+                </p>
+                <div class="card-tech">
+                  <p class="card-point pl-s">Made with:</p>
+                  <ul class="card-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                  </ul>
+                </div>
+                <div class="card-main-features">
+                  <p class="card-point pl-s">Main features:</p>
+                  <ul class="card-list">
+                    <li>Just a simple fully responsive landing page.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
