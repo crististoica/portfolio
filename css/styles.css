@@ -330,6 +330,10 @@ section:nth-child(even) {
   transition: opacity 500ms ease;
 }
 
+.btn:hover {
+  opacity: 0.8;
+}
+
 .sm-text {
   font-size: 0.8rem;
   line-height: 1.25rem;
@@ -344,7 +348,6 @@ section:nth-child(even) {
   align-items: center;
   gap: 2rem;
   padding: 0.5rem;
-  background-color: var(--background-clr-darker);
   box-shadow: var(--shadow);
 }
 
