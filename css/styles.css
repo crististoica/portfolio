@@ -181,7 +181,7 @@ section:nth-child(even) {
   width: 210px;
   height: 210px;
   border-radius: 50%;
-  background-image: url("../images/profile.JPG");
+  background-image: url("../assets/images/profile.JPG");
   background-size: cover;
 }
 
