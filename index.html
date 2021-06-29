@@ -53,7 +53,7 @@
         <ul class="links">
           <li class="link hover-el"><a href="#about">About</a></li>
           <li class="link hover-el"><a href="#projects">Projects</a></li>
-          <li class="link hover-el"><a href="/contact">Contact</a></li>
+          <li class="link hover-el"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -62,8 +62,8 @@
       <!--  ====== HOME SECTION ====== -->
       <section id="home">
         <div class="section-content">
-          <div class="profile-img-container"></div>
-          <div class="intro-text">
+          <div class="profile-img-container animate"></div>
+          <div class="intro-text animate">
             <p>Hi! I'm</p>
             <h3 class="highlight">Cristian Stoica</h3>
             <p>
@@ -75,10 +75,11 @@
                 href="https://github.com/crististoica"
                 rel="noopener noreferrer"
                 target="_blank"
+                class="social-icon"
               >
                 <img src="./assets/icons/github.svg" alt="github" />
               </a>
-              <a href="#">
+              <a href="#" class="social-icon">
                 <img src="./assets/icons/linkedin.svg" alt="linkedin" />
               </a>
             </div>
@@ -88,7 +89,7 @@
       <!-- ===== ABOUT SECTION ===== -->
       <section id="about">
         <div class="section-content col">
-          <div class="entry">
+          <div class="entry animate">
             <h2 class="entry-title">About</h2>
             <p>
               I am a very passionate person when it comes to web development and
@@ -103,7 +104,7 @@
               designer).
             </p>
           </div>
-          <div class="entry">
+          <div class="entry animate">
             <h2 class="entry-title">Skills</h2>
             <div class="skills">
               <div class="skill">
@@ -174,9 +175,9 @@
       <!-- ===== PROJECTS SECTION ===== -->
       <section id="projects">
         <div class="section-content f-start">
-          <h2 class="entry-title">Projects</h2>
+          <h2 class="entry-title animate">Projects</h2>
           <div class="project-cards">
-            <div class="card">
+            <div class="card animate">
               <div class="card-img-container">
                 <img
                   src="./assets/images/cards/covid19-view-desktop.PNG"
@@ -231,7 +232,7 @@
               </div>
             </div>
 
-            <div class="card">
+            <div class="card animate">
               <div class="card-img-container">
                 <img
                   src="./assets/images/cards/quiz-desktop.PNG"
@@ -265,7 +266,7 @@
               <div class="card-content">
                 <h2 class="card-point pl-s">Quiz App for CS Students</h2>
                 <p class="card-description">
-                  An app I made to help me and my coleagues prepare for the
+                  An app I made to help me and my colleagues prepare for the
                   final year exam. The exam was required in order to be able to
                   present the final project.
                 </p>
@@ -284,7 +285,7 @@
                   <p class="card-point pl-s">Main features:</p>
                   <ul class="card-list">
                     <li>
-                      Quizes with random questions for the three required
+                      Quizzes with random questions for the three required
                       subjects: Java, Databases, Networks.
                     </li>
                     <li>
@@ -294,14 +295,14 @@
                     </li>
                     <li>
                       An admin panel used by admins to do CRUD (create, read,
-                      update, delete) operations on quizes and community.
+                      update, delete) operations on quizzes and community.
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
 
-            <div class="card">
+            <div class="card animate">
               <div class="card-img-container">
                 <img
                   src="./assets/images/cards/easybank-desktop.jpg"
@@ -355,8 +356,40 @@
           </div>
         </div>
       </section>
+      <!-- ===== CONTACT SECTION ===== -->
+      <section id="contact">
+        <div class="entry col-center">
+          <div class="contact-container">
+            <h2 class="entry-title mb-m animate">Contact</h2>
+            <div class="contact-container-body animate">
+              <div class="contact-card">
+                <p class="contact-mail">
+                  <a href="mailto:cristianstoica802@gmail.com">Mail</a>
+                </p>
+                <img
+                  src="./assets/images/copy-clipboard.svg"
+                  alt="copy to clipboard"
+                />
+              </div>
+              <div class="contact-card">
+                <a href="#" class="contact-social">
+                  <p>Linkedin</p>
+                  <img src="./assets/icons/linkedin.svg" alt="linkedin" />
+                </a>
+              </div>
+              <div class="contact-card">
+                <a href="#" class="contact-social">
+                  <p>Github</p>
+                  <img src="./assets/icons/github.svg" alt="github" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="./js/index.js"></script>
+    <script src="./js/animation-on-scroll.js"></script>
   </body>
 </html>
