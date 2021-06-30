@@ -449,12 +449,15 @@ section:nth-child(even) {
   justify-content: space-between;
   align-items: center;
   border-left: 5px solid var(--accent-clr);
-  padding: 1em;
   cursor: pointer;
+  z-index: 2;
 }
 
-.contact-social,
-.contact-mail {
+.contact-card:not(:first-child) {
+  padding: 1em;
+}
+
+.contact-social {
   width: 100%;
 }
 
@@ -464,8 +467,61 @@ section:nth-child(even) {
   align-items: center;
 }
 
-.contact-social > img,
 .contact-card > img {
+  width: 32px;
+  height: 32px;
+}
+
+.copy-mail-icon {
+  position: relative;
+  width: calc(32px + 1.4em);
+  height: calc(32px + 1.4em);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  right: 1em;
+}
+
+.mail {
+  position: relative;
+  width: 80%;
+  padding: 1em;
+}
+
+/* ==== UTILITIES ==== */
+.messages {
+  width: 95%;
+  position: fixed;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.message {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem;
+  background-color: #edf2f4;
+  border-radius: 5px;
+  transform: translateY(-200%);
+  transition: transform 500ms ease-in;
+  box-shadow: var(--shadow);
+}
+
+.message.active {
+  transform: translateY(0);
+}
+
+.message.inactive {
+  transform: translateX(200vw);
+}
+
+.message > img {
   width: 32px;
   height: 32px;
 }
@@ -605,6 +661,7 @@ section:nth-child(even) {
     width: 100%;
     height: calc(100% + 5px);
     transition: transform 500ms ease-in-out;
+    pointer-events: none;
   }
   .contact-card::before {
     border-left: 5px solid var(--accent-clr);
@@ -623,5 +680,51 @@ section:nth-child(even) {
   }
   .contact-card:hover {
     opacity: 0.7;
+  }
+  .mail::before {
+    content: "Click here to open your mail app";
+    position: absolute;
+    left: -200%;
+    bottom: -100%;
+    left: 0;
+    opacity: 0;
+    white-space: nowrap;
+    background-color: var(--primary-clr);
+    color: var(--background-clr);
+    padding: 1em 1.5em;
+    opacity: 0;
+    transition: opacity 500ms ease;
+    pointer-events: none;
+  }
+
+  .mail:hover::before {
+    opacity: 1;
+  }
+
+  .copy-mail-icon::before {
+    content: "Copy to Clipboard";
+    position: absolute;
+    left: -200%;
+    bottom: -120%;
+    white-space: nowrap;
+    background-color: var(--primary-clr);
+    color: var(--background-clr);
+    padding: 1em 1.5em;
+    opacity: 0;
+    transition: opacity 500ms ease;
+    pointer-events: none;
+  }
+
+  .copy-mail-icon:hover::before {
+    opacity: 1;
+  }
+
+  .copy-mail-icon:hover .copy-icon {
+    stroke: var(--accent-clr);
+    stroke-width: 7;
+  }
+
+  .messages {
+    width: auto;
   }
 }

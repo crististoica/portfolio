@@ -4,7 +4,6 @@ const animationObserver = new IntersectionObserver(
   (entries, obsv) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        console.log("Intersectiong");
         entry.target.querySelectorAll(".animate").forEach((el) => {
           el.classList.add("slide");
         });
@@ -17,7 +16,6 @@ const animationObserver = new IntersectionObserver(
   },
   {
     threshold: 0.1,
-    // rootMargin: "-250px 0px",
   }
 );
 
