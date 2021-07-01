@@ -28,8 +28,8 @@ const createMessageEl = (msg) => {
       setTimeout(() => {
         messages.removeChild(div);
       }, 600);
-    }, 3000);
-  }, 250);
+    }, 2000);
+  }, 150);
 };
 
 copyMailToClipboard.addEventListener("click", () => {
