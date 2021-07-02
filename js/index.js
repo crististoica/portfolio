@@ -32,6 +32,7 @@ contactHelp.addEventListener("click", () => {
       .querySelector(".help-message-body")
       .classList.add("active");
   }, 600);
+  sideNav.style.display = "none";
 });
 
 closeHelp.addEventListener("click", () => {
@@ -41,5 +42,6 @@ closeHelp.addEventListener("click", () => {
     .classList.remove("active");
   setTimeout(() => {
     contactHelpMessage.classList.remove("active");
+    sideNav.style.display = "flex";
   }, 600);
 });
